@@ -13,13 +13,3 @@ def fetch_googletest_cpp():
         strip_prefix = "googletest-release-1.10.0",
         build_file = "//third_party/googletest:googletest.BUILD",
     )
-# def fetch_gtest_cpp():
-#     """This function defines a collection of repos and should be called in a WORKSPACE file"""
-#     maybe(
-#         http_archive,
-#         name = "gtest",
-#         url = "https://github.com/google/googletest/archive/release-1.10.0.zip",
-#         sha256 = "94c634d499558a76fa649edb13721dce6e98fb1e7018dfaeba3cd7a083945e91",
-#         build_file = "@//:gtest.BUILD",
-#         strip_prefix = "googletest-release-1.10.0",
-#     )
