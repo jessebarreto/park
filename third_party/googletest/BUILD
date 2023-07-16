@@ -1,5 +1,5 @@
 # Aliased targets
-# alias(
-#     name = "gtest",
-#     actual = "@gtest//:main",
-# )
+alias(
+    name = "gtest",
+    actual = "@gtest//:main",
+)
