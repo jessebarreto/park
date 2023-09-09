@@ -5,6 +5,7 @@ load("//third_party/io_bazel_rules_go:io_bazel_rules_go.bzl", "fetch_io_bazel_ru
 load("//third_party/rules_foreign_cc:rules_foreign_cc.bzl", "fetch_rules_foreign_cc")
 load("//third_party/rules_pkg:rules_pkg.bzl", "fetch_rules_pkg")
 load("//third_party/bazel_skylib:bazel_skylib.bzl", "fetch_bazel_skylib")
+load("//third_party/bazel_gazelle:bazel_gazelle.bzl", "fetch_bazel_gazelle")
 load("//third_party/rules_cc:rules_cc.bzl", "fetch_rules_cc")
 
 def load_third_party_libraries():
@@ -16,3 +17,4 @@ def load_third_party_libraries():
     fetch_rules_pkg()
     fetch_bazel_skylib()
     fetch_rules_cc()
+    fetch_bazel_gazelle()
