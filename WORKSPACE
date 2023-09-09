@@ -16,6 +16,9 @@ go_register_toolchains(version = "1.20.3")
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 gazelle_dependencies()
 
+load("@google_protobuf//:protobuf_deps.bzl", "protobuf_deps")
+protobuf_deps()
+
 # ######################
 # # C++ SUPPORT
 # ######################
