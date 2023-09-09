@@ -7,6 +7,13 @@ load("//third_party:dependencies.bzl", "load_third_party_libraries")
 load_third_party_libraries()
 
 # ######################
+# # GO SUPPORT
+# ######################
+load("@io_bazel_rules_go//go:deps.bzl", "go_rules_dependencies", "go_register_toolchains")
+go_rules_dependencies()
+go_register_toolchains(version = "1.20.3")
+
+# ######################
 # # C++ SUPPORT
 # ######################
 
