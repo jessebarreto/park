@@ -40,4 +40,25 @@ load("@aspect_bazel_lib//lib:repositories.bzl", "aspect_bazel_lib_dependencies")
 
 aspect_bazel_lib_dependencies()
 
-# TODO
+######################
+# PYTHON SUPPORT
+######################
+
+load("@rules_python//python:repositories.bzl", "py_repositories")
+
+py_repositories()
+
+load("@rules_python//python:repositories.bzl", "python_register_toolchains")
+python_register_toolchains(
+    name = "python_3_11",
+    # Available versions are listed in @rules_python//python:versions.bzl.
+    # We recommend using the same version your team is already standardized on.
+    python_version = "3.11",
+)
+
+# load("@rules_python//python:pip.bzl", "pip_parse")
+# pip_parse(
+#     name = "pypi",
+#     python_interpreter_target = "@python_3_11_host//:python",
+#     requirements_lock = "//:requirements.txt",
+# )
