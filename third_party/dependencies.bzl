@@ -9,6 +9,7 @@ load("//third_party/bazel_gazelle:bazel_gazelle.bzl", "fetch_bazel_gazelle")
 load("//third_party/rules_cc:rules_cc.bzl", "fetch_rules_cc")
 load("//third_party/google_protobuf:google_protobuf.bzl", "fetch_google_protobuf")
 load("//third_party/bazelbuild_buildtools:bazelbuild_buildtools.bzl", "fetch_bazelbuild_buildtools")
+load("//third_party/rules_python:rules_python.bzl", "fetch_rules_python")
 
 def load_third_party_libraries():
     fetch_googletest_cpp()
@@ -22,3 +23,4 @@ def load_third_party_libraries():
     fetch_bazel_gazelle()
     fetch_google_protobuf()
     fetch_bazelbuild_buildtools()
+    fetch_rules_python()
