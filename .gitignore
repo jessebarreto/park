@@ -1,4 +1,8 @@
-bazel-bin/*
-bazel-out/*
-bazel-park/*
-bazel-testlogs/*
+# Bazel related
+bazel-*
+user.bazelrc
+
+# Python related
+__pycache__
+.venv
+.local_venv
