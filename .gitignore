@@ -1,8 +1,10 @@
 # Bazel related
 bazel-*
 user.bazelrc
+MODULE.bazel.lock
 
 # Python related
 __pycache__
 .venv
 .local_venv
+.pytest_cache
