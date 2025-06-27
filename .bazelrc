@@ -1,5 +1,5 @@
-# bazel build --cxxopt=-std=c++14
-# bazel test --test_output=all
+# bazel build --cxxopt=-std=c++17
+# bazel test --test_output=all --run_under="valgrind --leak-check=full"
 
 
 # ######################
